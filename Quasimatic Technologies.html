@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quasimatic Technologies</title>
+    <style>
+        body {
+            background-image: url('https://media.istockphoto.com/id/1390647151/photo/abstract-technology-background-big-data-digital-code-futuristic-dots-background-3d-rendering.jpg?b=1&s=170667a&w=0&k=20&c=kfGdOkhaPrqyFYEdIz7H9oz97YLqlfRGEnc3752QIMQ=');
+            background-color:blue;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
+    <script>
+        function validateform() {
+            var username = document.forms["Loginform"]["username"].value;
+            var password = document.forms["Loginform"]["password"].value;
+            if (username == "" || password == "") {
+                alert("Please fill in all fields");
+                return false;
+            } else if (username == "user" && password == "password") {
+                window.location.href = "main.html";
+                return false;
+            } else {
+                alert("Invalid username or password");
+                return false;
+            }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="new.html">Home</a>
+        <a href="new.html">About</a>
+        <a href="new.html">Products</a>
+        <a href="new.html">Contact</a>
+    </nav>
+    <form action="#" method="get">
+        <input type="text" placeholder="Search...">
+    </form>
+    <style>
+        nav {
+            float: top right;
+        }
+
+        nav a {
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 1em;
+            margin-right: 10px;
+        }
+    </style>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-MOMAKlS3q3qT3TftI/0n7LoECZd95OSBkzIDJDKnNcYZNQrK8BybRtEo5e5KNgVSEn5E5bb7VHv/xofnkQCmDg==" crossorigin="anonymous" />
+</head>
+    <h1>Quasimatic Technologies</h1>
+    <h2>Welcome</h2>
+    
+    <form name="Loginform" onsubmit="return validateform()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="login">
+    </form>
+   <footer>
+  <p>&copy; 2023 Quasimatic Technologies.Inc. All rights reserved.</p>    
+   <style>
+       footer {
+    color: white;
+    padding: 75px;
+    text-align: center;
+}
+    </style>
+    </footer>
+</body>
+</html>
